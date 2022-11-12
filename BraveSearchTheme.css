@@ -1,0 +1,262 @@
+/* ==UserStyle==
+@name         DuckDuckGo Theme for Brave Search
+@version      20220417.02.57
+@namespace    userstyles.world/user/pix
+@description  DuckDuckGo Theme for Brave Search.
+This theme or userstyle changes the Brave Search engine to look like the DuckDuckGo search engines dark mode.
+@author       pix
+@license      GPL3
+==/UserStyle== */
+
+@-moz-document domain("search.brave.com") {
+:root:not(.light) {
+    --body-bg: #1E2028;
+    --bg-glassy: #1A1C23;
+    --bg-1: #1c1c1c;
+    --bg-2: #282828;
+    --bg-02: #17171F;
+    --bg-3: #1f1f1f;
+    --bg-04: #1E2027;
+    --bg-green: #a7f0ba;
+    --bg-blue: #d0e2ff;
+    --bg-red: #ffd6e8;
+    --bg-favicon: #4B5062;
+    --bg-scrim: rgba(34, 37, 49, 0.6);
+    --bg-form-control-selected: #7679B1;
+    --bg-form-control-unselected: #5E6175;
+    --form-control-selected: #4436E1;
+    --form-control-hover: #D0D2F7;
+    --form-control-focus: #A0A5EB;
+    --settings-header-bg: #222531;
+    --settings-header-text: #F8FAFD;
+    --settings-header-icon: #808A9D;
+    --settings-widget-text: #828D9F;
+    --settings-item-text: #CFD6E4;
+    --settings-item-icon: #A1A5E4;
+    --settings-item-border: #2B3445;
+    --settings-item-border-2: #515151;
+    --settings-dark-theme-btn: #343A40;
+    --settings-btn-bg: #3A3F55;
+    --settings-btn-text: #CFD6E4;
+    --settings-widget-outline: #3F4C63;
+    --settings-independent-score: #7078FF;
+    --settings-global-score: #FF845D;
+    --brave-supporter-bg: #252730;
+    --brave-supporter-text: #2267BE;
+    --context-menu-header-border: #58667E;
+    --color-primary: #cccccc;
+    --color-primary-2: #bcbcbc;
+    --color-primary-3: #c9d4dc;
+    --color-white: #ffffff;
+    --color-gray-2: #cccccc;
+    --color-gray-3: #cccccc;
+    --color-gray-4: #7E8790;
+    --color-gray-5: #7E8790;
+    --color-gray-6: #828d9f;
+    --color-green: #0f9d58;
+    --color-red: #d23f31;
+    --color-blue: #0043ce;
+    --info-color: #828D9F;
+    --link-primary: #EFF2F5;
+    --link-secondary: #cccccc;
+    --link-visited: #A0A5EB;
+    --snippet-url: #cccccc;
+    --separator-dot: #808a9d;
+    --theme-purple: #7675fd;
+    --theme-yellow: #F8BE2D;
+    --border-color: #333;
+    --blurple-300: #A0A5EB;
+    --text-01: #F8FAFD;
+    --text-02: #C2C4CF;
+    --text-03: #84889C;
+    --interactive-04: #353DAB;
+    --interactive-05: #4C54D2;
+    --interactive-06: #737ADE;
+    --interactive-07: #cccccc;
+    --interactive-08: #5E6175;
+    --focus-border: #1c1c1c;
+    --divider-01: #3B3E4F;
+    --disabled: #343A40;
+    --btn-filled-bg: var(--interactive-05);
+    --btn-filled-bg-hover: var(--interactive-06);
+    --btn-filled-text-active: rgba(255, 255, 255, 0.7);
+    --btn-filled-bg-active: rgba(115, 122, 222, 0.7);
+    --btn-filled-text-disabled: #677078;
+    --btn-outline-border: var(--interactive-08);
+    --btn-outline-border-hover: var(--interactive-06);
+    --btn-outline-text: var(--interactive-07);
+    --btn-outline-text-hover: var(--blurple-300);
+    --btn-outline-text-active: rgba(160, 165, 235, 0.7);
+    --btn-outline-border-active: rgba(115, 122, 222, 0.7);
+    --btn-outline-text-disabled: #495057;
+    --btn-icon-svg-hover: var(--blurple-300);
+    --btn-icon-bg-hover: rgba(160, 165, 235, 0.32);
+    --btn-icon-svg-active: rgba(160, 165, 235, 0.7);
+    --code-bg-0: #2F313C;
+    --code-border: #22232A;
+    --code-color-1: #525964;
+    --code-color-2: #ACBBD5;
+    --code-color-3: #7FA569;
+    --code-color-4: #5198D4;
+    --code-color-5: #B26AC7;
+    --shadow-1: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
+    --shadow-2: 0 1px 6px rgba(32, 33, 36, 0.28);
+    --search-bgd-01: #121418;
+    --search-bgd-02: #1c1c1c;
+    --search-bgd-03: #161616;
+    --search-bgd-04: #1c1c1c;
+    --search-bgd-05: #242731;
+    --search-bgd-06: #333333;
+    --search-bgd-07: #1E2028;
+    --search-bgd-08: #17191E;
+    --search-line-01: #333744;
+    --search-line-02: #636876;
+    --search-text-01: #cccccc;
+    --search-text-02: #cccccc;
+    --search-text-03: #cccccc;
+    --search-text-04: #eeeeee;
+    --search-text-05: #cccccc;
+    --search-text-06: #cccccc;
+    --search-text-09: #997B08;
+    --search-text-10: #FB542B;
+    --search-interactive-01: #eeeeee;
+    --search-interactive-02: #cccccc;
+    --search-interactive-03: #cccccc;
+    --search-interactive-04: #eeeeee;
+    --search-interactive-05: #cccccc;
+}
+
+
+/* bar thing */
+#submit-button .icon path {
+    fill: #999;
+}
+
+#clear-query-button.svelte-sqg0ny svg path.svelte-sqg0ny {
+    fill: #999;
+}
+
+.icon-wrapper {
+    --size: 23px;
+}
+
+#nav-tabs .tab-item a.active, #nav-tabs .tab-item.active a {
+    color: #769dff;
+}
+
+#nav-tabs .tab-item a.active:after, #nav-tabs .tab-item.active a:after {
+    background: #769dff;
+}
+
+#nav-tabs .tab-item .icon {
+    color: #cccccc;
+}
+
+#nav-tabs .tab-item {
+    font-size: 13px;
+}
+
+#nav-tabs .tab-item a.active .icon path, #nav-tabs .tab-item.active .icon path {
+    fill: #769dff;
+}
+
+#nav-tabs .tab-item .icon-wrapper {
+    margin-right: 0px;
+}
+
+.container-80 {
+    padding-left: 160px;
+    max-width: 1700px;
+}
+
+.flex-hcenter {
+    display: none;
+}
+
+#navbar-tabs {
+    padding-left: 10px;
+    margin-top: -15px;
+}
+
+.navbar {
+    padding-top: 16px;
+}
+
+.searchform-container {
+    --search-total-gap: 0px;
+}
+
+/* logo */
+.logo-large {
+    display: none;
+}
+
+.logo-small {
+    padding-left: 0 !important;
+    height: 36px;
+    margin-top: 4px;
+    display: block;
+}
+
+#nav-logo {
+    padding-left: 110px;
+}
+
+/* video cards */
+
+.card .card-body .title {
+    font-family: var(--brand-font);
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.card .card-body {
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    height: 72px;
+}
+
+.card {
+    margin: 0.5%;
+}
+
+.card .card-footer {
+    padding: 8px;
+}
+
+/* search contents */
+
+.r {
+    display: none;
+}
+
+.carousel-snippet {
+    padding-left: 20px;
+}
+
+#search-elsewhere .panel {
+    display: none;
+}
+
+.netloc {
+    opacity: 1;
+}
+
+.url-path {
+    opacity: 1;
+}
+
+.infobox {
+    background-color: #282828;
+}
+
+/* search bar */
+
+.suggestion.svelte-sqg0ny.svelte-sqg0ny {
+    padding: 1px;
+    padding-left: 5px;
+}
+
+}
